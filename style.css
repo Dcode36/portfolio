@@ -89,7 +89,7 @@ main {
     right: 300px;
     top: 100px;
 
-   
+
 }
 
 .star-2 {
@@ -97,7 +97,7 @@ main {
     left: 300px;
     bottom: 100px;
 
-   
+
 }
 
 .para {
@@ -172,7 +172,7 @@ h3 {
 .about-left,
 .about-right {
     width: 50%;
-  
+
 }
 
 .left-content {
@@ -227,9 +227,111 @@ h3 {
     height: 100vh;
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(50, 61, 88, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-container {
+    height: 100%;
+    width: 80%;
 
 }
 
+.title {
+    border-bottom: 2px solid #C0EEF2;
+    width: 150px;
+    margin: 2% 5%;
+}
+
+.title h4 {
+    font-size: 22px;
+    border-bottom: 10%;
+    width: 100%;
+}
+
+.card-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000091;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.card:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: #C0EEF2;
+    font-size: 20px;
+    position: absolute;
+    margin: 29px;
+    /* top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    
+}
+.text p{
+    color: #C0EEF2;
+    font-weight: 700;
+}
+.demo-btn{
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #C0EEF2;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  .demo-btn:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  .demo-btn:active {
+    transform: scale(0.9);
+  }
 #contact {
     height: 100vh;
     background-color: blue;
@@ -261,8 +363,7 @@ h3 {
     .star-1 {
         position: absolute;
         right: 20px;
-        height: 20px;
-        width: 30px;
+
         top: 100px;
     }
 
@@ -338,6 +439,7 @@ h3 {
         text-align: justify;
         height: 100%;
     }
+
     .right-content div span {
 
         padding: 5px 12px;
@@ -354,4 +456,21 @@ h3 {
         margin: 5px;
         box-shadow: rgb(225, 225, 225) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
+    .demo-btn{
+        position: relative;
+        display: inline-block;
+        margin: 5px 0;
+        padding: 8px 20px;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #C0EEF2;
+        background: transparent;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+        border: 2px solid #725AC1;
+        border-radius: 10px;
+        box-shadow: inset 0 0 0 0 #725AC1;
+      }
 }
