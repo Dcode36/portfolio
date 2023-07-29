@@ -224,10 +224,10 @@ h3 {
 }
 
 #projects {
-    height: 100vh;
+    height: 100%;
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(50, 61, 88, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    padding-top: 100px;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
