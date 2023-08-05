@@ -49,6 +49,9 @@ function isElementInViewport(element) {
     });
   });
 
+
+
+
 var typed = new Typed('.input', {
     strings: ["Developer.", "Designer.", "Freelancer."],
     typeSpeed: 100,

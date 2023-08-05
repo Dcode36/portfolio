@@ -16,10 +16,13 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+
 }
 
 
-
+nav.hidden {
+    opacity: 0;
+}
 
 nav {
     display: flex;
@@ -27,15 +30,15 @@ nav {
     align-items: center;
     height: 80px;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
 
 }
 
 ul {
-    background-color: #e9f8f97c;
+    background-color: #ffffff6a;
     border-radius: 30px;
     list-style: none;
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
     display: flex;
     box-shadow: rgba(232, 232, 232, 0.2) 0px 7px 29px 0px;
@@ -48,10 +51,14 @@ li {
 a {
     display: block;
     padding: 8px 30px;
-    color: #E9F8F9;
+    color: #333;
     text-decoration: none;
     border-radius: 30px;
     transition: background-color 0.3s;
+}
+
+ul li a i {
+    color: #333;
 }
 
 a:hover {
@@ -64,6 +71,10 @@ a.active {
     font-weight: 500;
 }
 
+a.active i {
+    color: #333;
+    font-weight: 500;
+}
 
 .heading {
     font-size: 5rem;
@@ -84,21 +95,9 @@ main {
     width: 70%;
 }
 
-.star-1 {
-    position: absolute;
-    right: 300px;
-    top: 100px;
 
 
-}
 
-.star-2 {
-    position: absolute;
-    left: 300px;
-    bottom: 100px;
-
-
-}
 
 .para {
     font-weight: bold;
@@ -124,6 +123,11 @@ main {
     position: relative;
     color: #C0EEF2;
     font-size: 1.3rem;
+    transition: all 0.3 ease-in-out;
+}
+
+.social-icons i:hover {
+    color: #725AC1;
 }
 
 .mobile-visiblity {
@@ -267,7 +271,7 @@ h3 {
     cursor: pointer;
 }
 
-.text > span {
+.text>span {
     display: flex;
     gap: 10px;
 }
@@ -299,7 +303,7 @@ h3 {
     font-size: 20px;
     position: absolute;
     margin: 29px;
-  
+
 
 }
 
@@ -336,18 +340,121 @@ h3 {
 }
 
 #contact {
-    height: 100vh;
+    height: 100%;
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(50, 61, 88, 1) 0%, rgba(0, 0, 0, 1) 100%);
     padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.form-container {
+    height: 100%;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.name,
+.email {
+    display: flex;
+    flex-direction: column;
 
 }
 
+label {
+    margin: 10px 0;
+}
+
+.name input,
+.email input {
+    width: 300px;
+    padding: 10px;
+    background-color: #f5f2f26d;
+    border: none;
+    border-radius: 7px;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.message-box textarea {
+    width: 640px;
+    padding: 10px;
+    background-color: #f5f2f26d;
+    border: none;
+    border-radius: 7px;
+
+}
+
+.submitbtn {
+    background-color: #725AC1;
+    padding: 10px 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submitbtn:hover {
+    background-color: transparent;
+    outline: 3px solid #725AC1;
+}
+
+#desktop-nav {
+    display: block;
+}
+
+#mobile-nav {
+    display: none;
+}
+footer{
+    background-color: transparent;
+}
+
+
+footer .social-icons{
+    margin: 0;
+
+}
 @media(max-width:900px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: block;
+    }
+
     main {
         margin: 30% 0;
         width: 90%;
-        height: 50vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -479,5 +586,30 @@ h3 {
         border: 2px solid #725AC1;
         border-radius: 10px;
         box-shadow: inset 0 0 0 0 #725AC1;
+    }
+
+    .form-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    form {
+
+        width: 100vw;
+    }
+
+    .message-box textarea {
+        width: 90vw;
+    }
+
+    .name input,
+    .email input {
+        width: 90vw;
+    }
+
+    .input-box {
+
+        flex-direction: column;
+
     }
 }
