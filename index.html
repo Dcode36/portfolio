@@ -236,15 +236,15 @@
         <h3>Get in Touch</h3>
         <div class="about-head">📫 Have a question? Don't hesitate to contact me! 🙌</div>
         <div class="form-container">
-            <form action="https://formsubmit.co/kadamdigvijay36@gmail.com" method="POST">
+            <form action="https://formsubmit.co/kadamdigvijay36@gmail.com" method="POST" onsubmit="return validateForm()">
                 <div class="input-box">
                     <div class="name">
                         <label>Name</label>
-                        <input type="text" name="Name">
+                        <input type="text" id="name" name="Name">
                     </div>
                     <div class="email">
                         <label>Email</label>
-                        <input type="email" name="Email">
+                        <input type="email" id="email" name="Email">
                     </div>
 
                 </div>
@@ -277,6 +277,7 @@
    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

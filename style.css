@@ -433,14 +433,11 @@ label {
 #mobile-nav {
     display: none;
 }
-footer{
-    background-color: transparent;
-}
 
 
-footer .social-icons{
+#contact .social-icons{
     margin: 0;
-
+    
 }
 @media(max-width:900px) {
     #desktop-nav {

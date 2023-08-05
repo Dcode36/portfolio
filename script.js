@@ -61,3 +61,19 @@ var typed = new Typed('.input', {
 
 
 
+
+
+
+function validateForm() {
+  var username = document.getElementById("name").value;
+  var password = document.getElementById("email").value;
+
+  if (username.trim() === '' || password.trim() === '') {
+      Swal.fire("Please fill in all fields before submitting.");
+      return false; // Prevent form submission
+  }
+
+  // If the form is not empty, allow form submission
+  return true;
+}
+
