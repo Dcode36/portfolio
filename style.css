@@ -229,6 +229,7 @@ h3 {
 
 #projects {
     height: 100%;
+    width: 100%;
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(50, 61, 88, 1) 0%, rgba(0, 0, 0, 1) 100%);
     padding: 100px 0;
@@ -437,7 +438,7 @@ label {
 
 #contact .social-icons{
     margin: 0;
-    
+    padding: 50px 0;
 }
 @media(max-width:900px) {
     #desktop-nav {
