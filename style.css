@@ -5,7 +5,10 @@
     scroll-behavior: smooth;
     color: #C0EEF2;
 }
-
+body{
+    width: 100%;
+    max-width: 1920px;
+}
 .hero-section {
     height: 100%;
     width: 100%;
@@ -16,7 +19,7 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-
+    position: relative;
 }
 
 
